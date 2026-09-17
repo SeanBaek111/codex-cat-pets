@@ -6,9 +6,9 @@ Two fluffy companions based on real cats. Cheese has a ginger coat and a cream m
 
 ### [Install Cheese or Cream →](https://SeanBaek111.github.io/codex-cat-pets/)
 
-Open the installation page, choose **Install Cheese in Codex** or **Install Cream in Codex**, and allow your browser to open Codex. Review and complete the installation in the app.
+Open the installation page, choose **Open Cheese in Codex** or **Open Cream in Codex**, and allow your browser to open Codex. Review and complete the installation in the app.
 
-No ZIP extraction or installer script is needed for this method. Codex must already be installed and support pet installation links. GitHub blocks direct `codex://` links in README files, so these buttons are hosted on the installation page.
+If Codex opens but no installation window appears, use the [manual installation](#manual-installation) below. The link-based flow requires no ZIP extraction or installer script when it is available. Codex must already be installed and support pet installation links. GitHub blocks direct `codex://` links in README files, so these buttons are hosted on the installation page.
 
 | Cheese | Cream |
 | --- | --- |
@@ -40,7 +40,7 @@ This repository is public. No GitHub login or Git installation is needed. Extrac
 
 ## Install on macOS
 
-For the ZIP installer, open Terminal, type `bash `, drag `install-mac.command` from the extracted folder into the Terminal window, and press Return. Administrator access is not required. macOS may block double-clicking this unsigned script; the installation page above opens the native Codex installation flow instead.
+For the ZIP installer, open Terminal, type `bash `, drag `install-mac.command` from the extracted folder into the Terminal window, and press Return. Administrator access is not required. macOS may block double-clicking this unsigned script; you can use the Finder-only manual installation below instead.
 
 ## Install on Windows
 
@@ -54,7 +54,25 @@ Open **Settings > Pets** in the app and choose **Cheese** or **Cream**. If they 
 
 ## Manual installation
 
-Copy the `pets/cheese` and `pets/cream` folders to the following location:
+If the app opens without an installation window, install the files directly. No script is required.
+
+### macOS with Finder
+
+1. [Download the ZIP](https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip), extract it, and open its `pets` folder.
+2. In Finder, press **Command + Shift + G**, enter `~/.codex/`, and press Return.
+3. Open the `pets` folder, or create it if missing. Copy `cheese` and `cream` from the extracted ZIP into it. Back up existing folders with those names before replacing them.
+4. Fully quit and reopen Codex, then choose your pet in **Settings > Pets**.
+
+### Individual file downloads
+
+Right-click each link and choose **Save Link As**. Preserve the filenames, including their extensions.
+
+| Pet folder | Manifest | Spritesheet |
+| --- | --- | --- |
+| `cheese` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/spritesheet.webp) |
+| `cream` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/spritesheet.webp) |
+
+Put each pair of files inside its named pet folder. Copy the `cheese` and `cream` folders to the following location:
 
 | Platform | Default destination |
 | --- | --- |
