@@ -6,9 +6,9 @@ Two fluffy companions based on real cats. Cheese has a ginger coat and a cream m
 
 ### [Install Cheese or Cream →](https://SeanBaek111.github.io/codex-cat-pets/)
 
-Open the installation page, choose **Install Cheese with Codex** or **Install Cream with Codex**, and allow your browser to open Codex. A new chat opens with an installation request already filled in. **Press Send** and let Codex install the existing pet files. Approve file access if requested.
+Open the installation page, choose **Install Cheese in Codex** or **Install Cream in Codex**, and allow your browser to open Codex. Review and complete the installation in the app.
 
-No ZIP extraction or downloaded installer script is needed for this method. The request is not sent automatically. A secondary direct-install link is available for app configurations that enable native pet installation. Some configurations only bring the app to the foreground; use the main chat-based button in that case. GitHub blocks direct `codex://` links in README files, so these buttons are hosted on the installation page.
+No ZIP extraction or installer script is needed for this method. Codex must already be installed and support pet installation links. GitHub blocks direct `codex://` links in README files, so these buttons are hosted on the installation page.
 
 | Cheese | Cream |
 | --- | --- |
@@ -40,7 +40,7 @@ This repository is public. No GitHub login or Git installation is needed. Extrac
 
 ## Install on macOS
 
-For the ZIP installer, open Terminal, type `bash `, drag `install-mac.command` from the extracted folder into the Terminal window, and press Return. Administrator access is not required. macOS may block double-clicking this unsigned script; the main button on the installation page opens a ready-to-send installation request instead.
+For the ZIP installer, open Terminal, type `bash `, drag `install-mac.command` from the extracted folder into the Terminal window, and press Return. Administrator access is not required. macOS may block double-clicking this unsigned script; the installation page above opens the native Codex installation flow instead.
 
 ## Install on Windows
 
