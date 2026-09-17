@@ -24,7 +24,7 @@ Two fluffy companions for your Codex desktop.
 | **Cheese** | [Open installer ↗](https://seanbaek111.github.io/codex-cat-pets/#cheese) | [pet.json](pets/cheese/pet.json) · [spritesheet.webp](pets/cheese/spritesheet.webp) |
 | **Cream** | [Open installer ↗](https://seanbaek111.github.io/codex-cat-pets/#cream) | [pet.json](pets/cream/pet.json) · [spritesheet.webp](pets/cream/spritesheet.webp) |
 
-Allow your browser to open Codex. If no installation window appears, use the [manual installation guide](INSTALL.md#manual-installation).
+The ZIP contains just four pet files. Allow your browser to open Codex. If no installation window appears, use the [manual installation guide](INSTALL.md#manual-installation).
 
 <details>
 <summary><strong>See them move</strong></summary>
