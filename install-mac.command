@@ -12,11 +12,11 @@ if [ -z "$pet_home" ]; then echo 'Destination must not be empty.' >&2; exit 1; f
 # Check the whole bundle before writing anything to the destination.
 (cd "$bundle_dir" && shasum -a 256 -c SHA256SUMS)
 backup_dir=''
-for pet_id in cheese cream; do
+for pet_id in cream cheese; do
   target="$pet_home/pets/$pet_id"
   if [ -L "$target" ]; then echo "Refusing symlink: $target" >&2; exit 1; fi
 done
-for pet_id in cheese cream; do
+for pet_id in cream cheese; do
   target="$pet_home/pets/$pet_id"
   if [ -e "$target" ]; then
     if [ -z "$backup_dir" ]; then
@@ -31,7 +31,7 @@ for pet_id in cheese cream; do
   cmp "$bundle_dir/pets/$pet_id/pet.json" "$target/pet.json"
   cmp "$bundle_dir/pets/$pet_id/spritesheet.webp" "$target/spritesheet.webp"
 done
-echo "Installed Cheese and Cream in: $pet_home/pets"
+echo "Installed Cream and Cheese in: $pet_home/pets"
 if [ -n "$backup_dir" ]; then echo "Previous files backed up in: $backup_dir"; fi
-echo 'Open Codex > Settings > Pets and select Cheese or Cream.'
+echo 'Open Codex > Settings > Pets and select Cream or Cheese.'
 echo 'If they are missing, quit and reopen Codex.'

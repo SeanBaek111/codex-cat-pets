@@ -29,7 +29,7 @@ class InstallTests(unittest.TestCase):
 
     def test_install_and_backup(self):
         self.install()
-        for pet in ('cheese', 'cream'):
+        for pet in ('cream', 'cheese'):
             target = self.dest / 'pets' / pet
             manifest = json.loads((target / 'pet.json').read_text(encoding='utf-8'))
             self.assertEqual(manifest['id'], pet)

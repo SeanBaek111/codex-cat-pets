@@ -1,19 +1,19 @@
 # Installation guide
 
-[← Back to Cheese & Cream](README.md)
+[← Back to Cream & Cheese](README.md)
 
 ## Download
 
-**[Download both pets as a ZIP](https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip)**
+**[Download both pets as a ZIP](https://github.com/SeanBaek111/codex-cream-cheese/releases/latest/download/codex-cream-cheese.zip)**
 
 The ZIP contains only the four files needed by the pets:
 
 ```text
 pets/
-  cheese/
+  cream/
     pet.json
     spritesheet.webp
-  cream/
+  cheese/
     pet.json
     spritesheet.webp
 ```
@@ -26,9 +26,9 @@ If the app opens without an installation window, install the files directly. No 
 
 ### macOS with Finder
 
-1. [Download the ZIP](https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip), extract it, and open its `pets` folder.
+1. [Download the ZIP](https://github.com/SeanBaek111/codex-cream-cheese/releases/latest/download/codex-cream-cheese.zip), extract it, and open its `pets` folder.
 2. In Finder, press **Command + Shift + G**, enter `~/.codex/`, and press Return.
-3. Open the `pets` folder, or create it if missing. Copy `cheese` and `cream` from the extracted ZIP into it. Back up existing folders with those names before replacing them.
+3. Open the `pets` folder, or create it if missing. Copy `cream` and `cheese` from the extracted ZIP into it. Back up existing folders with those names before replacing them.
 4. Fully quit and reopen Codex, then choose your pet in **Settings > Pets**.
 
 ### Individual file downloads
@@ -37,10 +37,10 @@ Right-click each link and choose **Save Link As**. Preserve the filenames, inclu
 
 | Pet folder | Manifest | Spritesheet |
 | --- | --- | --- |
-| `cheese` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/spritesheet.webp) |
-| `cream` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/spritesheet.webp) |
+| `cream` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cream-cheese/main/pets/cream/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cream-cheese/main/pets/cream/spritesheet.webp) |
+| `cheese` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cream-cheese/main/pets/cheese/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cream-cheese/main/pets/cheese/spritesheet.webp) |
 
-Put each pair of files inside its named pet folder. Copy the `cheese` and `cream` folders to the following location:
+Put each pair of files inside its named pet folder. Copy the `cream` and `cheese` folders to the following location:
 
 | Platform | Default destination |
 | --- | --- |

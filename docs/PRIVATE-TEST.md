@@ -3,7 +3,7 @@
 A generated `private-install-test.html` is a self-contained page for testing the native Codex pet installation flow while the repository stays private.
 
 1. Open the HTML file in Safari or Chrome on the computer where Codex is installed.
-2. Click **Install Cheese in Codex** or **Install Cream in Codex**.
+2. Click **Open Cream in Codex** or **Open Cheese in Codex**.
 3. Allow the browser to open Codex, then review and complete the app's installation flow.
 
 The HTML contains temporary access links to the private pet images. Keep it private. Do not commit it, publish it, or attach it to a public issue. If the app cannot download an image after some time, regenerate the page. No exact expiration time is assumed.
@@ -21,7 +21,7 @@ The generator verifies both downloaded spritesheets against the local assets, em
 For a private test release, a maintainer can replace its HTML attachment after generating a fresh page:
 
 ```sh
-gh release upload v1.1.0 ../private-install-test.html --repo SeanBaek111/codex-cat-pets --clobber
+gh release upload v1.1.0 ../private-install-test.html --repo SeanBaek111/codex-cream-cheese --clobber
 ```
 
 Upload this attachment only while the repository is private. Remove the temporary test attachment before making the repository public. Do not add the generated HTML to Git history.

@@ -14,7 +14,7 @@ from urllib.parse import urlencode, urlsplit
 from urllib.request import urlopen
 
 ROOT = Path(__file__).resolve().parents[1]
-REPO = 'SeanBaek111/codex-cat-pets'
+REPO = 'SeanBaek111/codex-cream-cheese'
 
 
 def github(path):
@@ -32,7 +32,7 @@ def main():
     if output == ROOT or ROOT in output.parents:
         raise RuntimeError('Write the private test page outside the Git repository.')
     page = (ROOT / 'docs/index.html').read_text(encoding='utf-8')
-    for pet in ('cheese', 'cream'):
+    for pet in ('cream', 'cheese'):
         manifest = json.loads((ROOT / 'pets' / pet / 'pet.json').read_text(encoding='utf-8'))
         record = github(f'repos/{REPO}/contents/pets/{pet}/spritesheet.webp')
         url = record.get('download_url', '')

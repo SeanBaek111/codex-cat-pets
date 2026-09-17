@@ -22,7 +22,7 @@ foreach ($line in $lines) {
 }
 if ($lines.Count -ne 4) { throw 'Expected four pet files in SHA256SUMS.' }
 $petsRoot = Join-Path $CodexHome 'pets'
-foreach ($petId in @('cheese', 'cream')) {
+foreach ($petId in @('cream', 'cheese')) {
     $target = Join-Path $petsRoot $petId
     if (Test-Path -LiteralPath $target) {
         if ((Get-Item -LiteralPath $target).Attributes -band [IO.FileAttributes]::ReparsePoint) {
@@ -31,7 +31,7 @@ foreach ($petId in @('cheese', 'cream')) {
     }
 }
 $backupDir = $null
-foreach ($petId in @('cheese', 'cream')) {
+foreach ($petId in @('cream', 'cheese')) {
     $source = Join-Path (Join-Path $PSScriptRoot 'pets') $petId
     $target = Join-Path $petsRoot $petId
     if (Test-Path -LiteralPath $target) {
@@ -51,7 +51,7 @@ foreach ($petId in @('cheese', 'cream')) {
         }
     }
 }
-Write-Host "Installed Cheese and Cream in: $petsRoot"
+Write-Host "Installed Cream and Cheese in: $petsRoot"
 if ($null -ne $backupDir) { Write-Host "Previous files backed up in: $backupDir" }
-Write-Host 'Open Codex > Settings > Pets and choose Cheese or Cream.'
+Write-Host 'Open Codex > Settings > Pets and choose Cream or Cheese.'
 Write-Host 'If they are missing, quit and reopen Codex.'

@@ -10,8 +10,8 @@ parser = argparse.ArgumentParser(description=__doc__)
 parser.add_argument('--output', type=Path, required=True, help='Output directory')
 args = parser.parse_args()
 args.output.mkdir(parents=True, exist_ok=True)
-archive = args.output / 'codex-cat-pets.zip'
-files = [f'pets/{pet}/{name}' for pet in ('cheese', 'cream')
+archive = args.output / 'codex-cream-cheese.zip'
+files = [f'pets/{pet}/{name}' for pet in ('cream', 'cheese')
          for name in ('pet.json', 'spritesheet.webp')]
 with ZipFile(archive, 'w', ZIP_DEFLATED) as bundle:
     for name in files:
