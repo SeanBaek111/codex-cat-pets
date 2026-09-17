@@ -56,7 +56,7 @@ def main():
         if count != 1:
             raise RuntimeError('Installation button is missing or duplicated.')
         gif = base64.b64encode((ROOT / 'previews' / f'{pet}.gif').read_bytes()).decode('ascii')
-        page = page.replace(f'../previews/{pet}.gif', 'data:image/gif;base64,' + gif)
+        page = page.replace(f'assets/{pet}.gif', 'data:image/gif;base64,' + gif)
     timestamp = datetime.now(timezone.utc).strftime('%Y-%m-%d %H:%M UTC')
     notice = ('<aside class="notice"><strong>Private installation test</strong>'
               '<p>This local page contains temporary access links to your private pet images. '

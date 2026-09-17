@@ -2,17 +2,13 @@
 
 Two fluffy companions based on real cats. Cheese has a ginger coat and a cream muzzle. Cream has long white fur, round eyes, and a tiny pink nose. Install both as custom Codex pets on macOS or Windows.
 
-## Try installation in Codex
+## Install in Codex
 
-### [Download the private installation test page →](https://github.com/SeanBaek111/codex-cat-pets/releases/download/v1.1.0/private-install-test.html)
+### [Install Cheese or Cream →](https://SeanBaek111.github.io/codex-cat-pets/)
 
-1. Download the HTML file above while signed in to GitHub with repository access.
-2. Open it in **Safari or Chrome** on the computer where Codex is installed.
-3. Click **Install Cheese in Codex** or **Install Cream in Codex**, allow the browser to open Codex, and complete the app's installation flow.
+Open the installation page, choose **Install Cheese in Codex** or **Install Cream in Codex**, and allow your browser to open Codex. Review and complete the installation in the app.
 
-This avoids running the downloaded `.command` installer. GitHub does not render `codex://` links as clickable README links, so the downloaded HTML provides the two buttons.
-
-**Private test:** the HTML contains temporary image-access links and is available only through this private release. Keep it private. If the image download fails after a while, the test page needs to be refreshed. [Maintainer refresh instructions](docs/PRIVATE-TEST.md). Native app installation is awaiting testing on the target computer.
+No ZIP extraction or installer script is needed for this method. Codex must already be installed and support pet installation links. GitHub blocks direct `codex://` links in README files, so these buttons are hosted on the installation page.
 
 | Cheese | Cream |
 | --- | --- |
@@ -40,11 +36,11 @@ Each pet includes nine animation states: idle, running left, running right, wavi
 
 **[Download both pets as a ZIP](https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip)**
 
-This repository is currently private, so sign in to GitHub with repository access before downloading. No Git installation is needed. Extract the ZIP to find both pets and the macOS and Windows installers. [View the latest release](https://github.com/SeanBaek111/codex-cat-pets/releases/latest).
+This repository is public. No GitHub login or Git installation is needed. Extract the ZIP to find both pets and the macOS and Windows installers. [View the latest release](https://github.com/SeanBaek111/codex-cat-pets/releases/latest).
 
 ## Install on macOS
 
-For the ZIP installer, open Terminal, type `bash `, drag `install-mac.command` from the extracted folder into the Terminal window, and press Return. Administrator access is not required. macOS may block double-clicking this unsigned script; the private HTML test above opens the native Codex installation flow instead.
+For the ZIP installer, open Terminal, type `bash `, drag `install-mac.command` from the extracted folder into the Terminal window, and press Return. Administrator access is not required. macOS may block double-clicking this unsigned script; the installation page above opens the native Codex installation flow instead.
 
 ## Install on Windows
 
