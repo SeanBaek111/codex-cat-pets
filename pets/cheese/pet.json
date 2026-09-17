@@ -1,0 +1,7 @@
+{
+  "id": "cheese",
+  "displayName": "Cheese",
+  "description": "A fluffy ginger cat with a cream muzzle and a slightly serious expression.",
+  "spriteVersionNumber": 2,
+  "spritesheetPath": "spritesheet.webp"
+}

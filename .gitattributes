@@ -1,0 +1,8 @@
+* text=auto
+*.command text eol=lf
+*.ps1 text eol=lf
+*.cmd text eol=crlf
+*.json text eol=lf
+SHA256SUMS text eol=lf
+*.webp binary
+*.gif binary
