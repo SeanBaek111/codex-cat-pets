@@ -1,0 +1,75 @@
+# Installation guide
+
+[← Back to Cheese & Cream](README.md)
+
+## Download
+
+**[Download both pets as a ZIP](https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip)**
+
+This repository is public. No GitHub login or Git installation is needed. Extract the ZIP to find both pets and the macOS and Windows installers. [View the latest release](https://github.com/SeanBaek111/codex-cat-pets/releases/latest).
+
+## Install on macOS
+
+For the ZIP installer, open Terminal, type `bash `, drag `install-mac.command` from the extracted folder into the Terminal window, and press Return. Administrator access is not required. macOS may block double-clicking this unsigned script; you can use the Finder-only manual installation below instead.
+
+## Install on Windows
+
+Choose **Extract All** on the ZIP, then double-click `install-windows.cmd` in the extracted folder.
+
+The installer uses built-in Windows PowerShell. No extra packages or administrator access are required. Its execution-policy override applies only to that process. If your organization's policy blocks scripts, use the manual installation instructions below.
+
+## Choose your pet
+
+Open **Settings > Pets** in the app and choose **Cheese** or **Cream**. If they do not appear, fully quit and reopen the app. You need a desktop app version that supports custom pets. See the [official settings guide](https://learn.chatgpt.com/docs/reference/settings#pets).
+
+## Manual installation
+
+If the app opens without an installation window, install the files directly. No script is required.
+
+### macOS with Finder
+
+1. [Download the ZIP](https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip), extract it, and open its `pets` folder.
+2. In Finder, press **Command + Shift + G**, enter `~/.codex/`, and press Return.
+3. Open the `pets` folder, or create it if missing. Copy `cheese` and `cream` from the extracted ZIP into it. Back up existing folders with those names before replacing them.
+4. Fully quit and reopen Codex, then choose your pet in **Settings > Pets**.
+
+### Individual file downloads
+
+Right-click each link and choose **Save Link As**. Preserve the filenames, including their extensions.
+
+| Pet folder | Manifest | Spritesheet |
+| --- | --- | --- |
+| `cheese` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/spritesheet.webp) |
+| `cream` | [pet.json](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/pet.json) | [spritesheet.webp](https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/spritesheet.webp) |
+
+Put each pair of files inside its named pet folder. Copy the `cheese` and `cream` folders to the following location:
+
+| Platform | Default destination |
+| --- | --- |
+| macOS | `~/.codex/pets/` |
+| Windows | `%USERPROFILE%\.codex\pets\` |
+
+Keep `pet.json` and `spritesheet.webp` together inside each pet folder. If your app uses a custom `CODEX_HOME`, copy the folders into its `pets` directory instead. For the native Windows app, use the Windows user directory rather than a WSL home directory.
+
+The installers honor `CODEX_HOME`. You can also specify a custom location directly:
+
+```sh
+bash install-mac.command '/path/to/codex-home'
+```
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\install-windows.ps1 -CodexHome 'D:\CodexHome'
+```
+
+The installers verify file checksums before copying anything. Existing pets with the same IDs are backed up under `pet-backups`. Other pets and app settings are left unchanged.
+
+## Package details and validation
+
+- Each pet uses a transparent 1536 x 2288 WebP spritesheet, the v2 format, nine animation states, and 16 look directions.
+- Original photographs and local working records are not included.
+- Both spritesheets passed asset validation and visual review.
+- macOS installation tests passed, including paths with spaces, backups, and rejection of corrupted downloads.
+- A Windows PowerShell installer and matching tests are included. They have not been executed on Windows. Run `python -m unittest discover -s tests -v` to run the tests. Python is needed only for testing, not installation.
+- Installer tests do not verify playback inside the app. Playback on other computers has not been tested.
+
+These custom pets were created from photo references using imagegen and hatch-pet. They are not official OpenAI characters.

@@ -1,33 +1,54 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Cheese & Cream · Install in Codex</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Meet Cheese and Cream, two fluffy animated companions for Codex. Open in the app or download their files."><meta name="theme-color" content="#f6f5f1"><title>Cheese & Cream · Codex Pets</title>
 <style>
-:root{color-scheme:dark;font-family:ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#171916;color:#f1eee6}*{box-sizing:border-box}body{margin:0;padding:48px 24px}main{max-width:860px;margin:auto}.eyebrow{color:#c4b894;font-size:12px;letter-spacing:.16em;text-transform:uppercase}h1{font-size:clamp(32px,6vw,54px);font-weight:600;letter-spacing:-.045em;margin:16px 0}p{color:#b6b9ae;line-height:1.7}.intro{max-width:620px}.notice{border:1px solid #494a3d;border-radius:12px;padding:16px 20px;background:#23251f;margin:26px 0}.cards{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:30px 0}.card{border:1px solid #3a3e33;border-radius:18px;padding:24px;background:#20231e}.portrait{display:flex;justify-content:center;align-items:center;background:#dcd9cb;border-radius:12px;height:240px}.portrait img{width:192px;height:208px;object-fit:contain}h2{margin-bottom:6px;font-size:25px}.card p{min-height:54px;margin:0 0 24px}.button{display:block;border-radius:9px;background:#ddd3b1;color:#20231b;text-align:center;padding:14px 12px;font-weight:600;text-decoration:none}.button:hover{background:#efe4c3}.downloads{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:16px;font-size:14px}.card .format{font-size:12px;min-height:0;margin:12px 0 0}code{overflow-wrap:anywhere;color:#e6dfca}.help{font-size:14px;border-top:1px solid #3a3e33;padding-top:24px}a{color:#ded3b0}footer{font-size:12px;color:#909789;margin-top:30px}ol{padding-left:20px;color:#b6b9ae;line-height:1.9}@media(max-width:560px){body{padding:30px 18px}.cards{grid-template-columns:1fr}}
-</style>
-</head>
-<body><main>
-<div class="eyebrow">Two cats. A little company.</div>
-<h1>Meet Cheese & Cream.</h1>
-<p class="intro">Fluffy companions for your Codex desktop. Try opening a cat in Codex, or download its files and install it manually below.</p>
-<!-- TEST_NOTICE -->
-<section class="cards" aria-label="Choose a pet">
-<article class="card"><div class="portrait"><img src="assets/cheese.gif" alt="Cheese waving" width="192" height="208"></div><h2>Cheese</h2><p>A fluffy ginger coat, a cream muzzle, and a slightly serious expression.</p><a class="button" id="install-cheese" href="codex://pets/install?name=Cheese&amp;imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2FSeanBaek111%2Fcodex-cat-pets%2Fmain%2Fpets%2Fcheese%2Fspritesheet.webp&amp;spriteVersionNumber=2">Open Cheese in Codex ↗</a><div class="downloads" aria-label="Download Cheese files"><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/pet.json">Download pet.json</a><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/spritesheet.webp">Download spritesheet.webp</a></div><p class="format">Sprite v2 · 1536 × 2288 transparent WebP</p></article>
-<article class="card"><div class="portrait"><img src="assets/cream.gif" alt="Cream waving" width="192" height="208"></div><h2>Cream</h2><p>Long white fur, round eyes, and a tiny pink nose.</p><a class="button" id="install-cream" href="codex://pets/install?name=Cream&amp;imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2FSeanBaek111%2Fcodex-cat-pets%2Fmain%2Fpets%2Fcream%2Fspritesheet.webp&amp;spriteVersionNumber=2">Open Cream in Codex ↗</a><div class="downloads" aria-label="Download Cream files"><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/pet.json">Download pet.json</a><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/spritesheet.webp">Download spritesheet.webp</a></div><p class="format">Sprite v2 · 1536 × 2288 transparent WebP</p></article>
-</section>
-<section class="help" id="manual-install">
-<h2>Installer did not open?</h2>
-<p>Your browser may ask for permission to open Codex. If the app opens without an installation window, use the manual steps below. Downloading the files alone does not install the pets.</p>
-<!-- DOWNLOAD_LINK --><p><a class="button" href="https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip">Download both pets as a ZIP</a></p><!-- /DOWNLOAD_LINK -->
-<h3>macOS: install with Finder</h3>
-<ol><li>Download and extract the ZIP. Open its <code>pets</code> folder to find <code>cheese</code> and <code>cream</code>.</li><li>In Finder, press <strong>⌘⇧G</strong> (Go to Folder), enter <code>~/.codex/</code>, and press Return.</li><li>Open the <code>pets</code> folder, or create it if it is missing. Copy the <code>cheese</code> and <code>cream</code> folders into it. If folders with those names already exist, back them up before replacing them.</li><li>Fully quit and reopen Codex, then choose Cheese or Cream in <strong>Settings → Pets</strong>.</li></ol>
-<p>No installer script or Terminal command is needed. The final files should be <code>~/.codex/pets/cheese/pet.json</code> and <code>~/.codex/pets/cheese/spritesheet.webp</code>, with the same structure for <code>cream</code>.</p>
-<h3>Windows</h3>
-<p>Extract the ZIP, open <code>%USERPROFILE%\.codex</code> in File Explorer, and copy the <code>cheese</code> and <code>cream</code> folders into its <code>pets</code> folder (create it if missing). Back up existing folders with the same names before replacing them. Restart Codex and choose your pet in Settings.</p>
-<h3>Using the individual files</h3>
-<p>Right-click each file link above and choose <strong>Save Link As</strong>. Keep the original filenames <code>pet.json</code> and <code>spritesheet.webp</code> together inside a folder named <code>cheese</code> or <code>cream</code>, then copy that folder to the same destination.</p>
-<p>A desktop app with custom pet support is required. If you use a custom <code>CODEX_HOME</code>, use its <code>pets</code> folder instead. On Windows, use the Windows home directory, not a WSL directory.</p>
-</section>
-<footer>Custom companions created from photo references. Not official OpenAI characters.</footer>
-</main></body></html>
+:root{color-scheme:light;font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;background:#f6f5f1;color:#282825;font-synthesis:none}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:#f6f5f1;-webkit-font-smoothing:antialiased}a{color:inherit}a:focus-visible,summary:focus-visible{outline:2px solid #9a7150;outline-offset:5px}header,footer{max-width:1100px;margin:auto;display:flex;justify-content:space-between;align-items:center;gap:20px}header{min-height:76px;border-bottom:1px solid #deded7}.brand{font-size:15px;font-weight:650;text-decoration:none;letter-spacing:-.4px}.muted-link{font-size:13px;color:#72736c;text-decoration:none}.muted-link:hover{color:#252722}main{max-width:900px;margin:64px auto 76px}.switcher{display:flex;justify-content:center;gap:6px;margin:0 auto 24px;padding:5px;width:fit-content;border:1px solid #deded7;border-radius:100px;background:#eeede8}.switcher a{padding:10px 26px;border-radius:100px;text-decoration:none;font-size:13px;color:#75756e}.switcher a[aria-current="true"]{background:#fff;color:#2a2c27;box-shadow:0 1px 4px #0000000d}.card{display:grid;grid-template-columns:340px 1fr;gap:40px;padding:30px;border:1px solid #deded6;border-radius:24px;background:#fff;box-shadow:0 12px 40px #29271906}.card[hidden]{display:none}.portrait{min-height:340px;display:grid;place-items:center;border:1px solid #e8e6df;border-radius:16px;background:#efede6}.portrait img{width:240px;height:260px;object-fit:contain;filter:drop-shadow(0 14px 18px #61584418)}.copy{align-self:center;min-width:0}.eyebrow{margin:0 0 14px;color:#97704e;text-transform:uppercase;font-size:10px;font-weight:650;letter-spacing:2px}h1{font-size:clamp(38px,5vw,54px);letter-spacing:-2.2px;line-height:1.05;margin:0 0 20px;font-weight:650}.description{font-size:15px;color:#76766e;line-height:1.7;margin:0 0 26px}.button{display:block;text-align:center;padding:15px 18px;border-radius:10px;background:#30322d;color:#fff;font-size:13px;font-weight:700;text-decoration:none;transition:background .15s}.button:hover{background:#484b42}.note{font-size:11px;line-height:1.7;color:#7b7d74;margin:12px 0 0}.fallback{margin-top:24px;border-top:1px solid #deded7;padding-top:17px;font-size:12px;color:#62665c}summary{cursor:pointer;font-weight:550;line-height:1.6}.fallback p{line-height:1.8;color:#73776c}.package-links{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}.package-links a{color:#4d5949;text-underline-offset:4px}.guide{margin:24px 0 0;padding:0 4px;color:#76796f;font-size:12px}.guide>summary{width:fit-content;margin:auto}.guide[open]{padding:20px 24px;border:1px solid #deded7;border-radius:14px;background:#fff}.guide[open]>summary{margin:0 0 18px;color:#33382e}.guide p,.guide ol{line-height:1.85}.guide h2{font-size:13px;color:#33382e;margin-top:24px}code{font-size:12px;overflow-wrap:anywhere;color:#4d5949}footer{border-top:1px solid #deded7;padding:22px 0;color:#7c7d74;font-size:11px;line-height:1.7}.notice{padding:20px;border:1px solid #deded6;border-radius:12px;margin-bottom:24px}.notice p{font-size:13px;line-height:1.6}
+@media(max-width:1160px){header,footer{margin-left:28px;margin-right:28px}}@media(max-width:960px){main{margin:44px 28px 60px}.card{grid-template-columns:minmax(220px,.9fr) 1.1fr;gap:28px}.portrait{min-height:320px}}
+@media(max-width:640px){header{min-height:64px}header,footer{margin-left:20px;margin-right:20px}main{margin:28px 20px 36px}.card{grid-template-columns:1fr;gap:26px;padding:22px;border-radius:20px}.portrait{min-height:240px}.portrait img{width:210px;height:228px}h1{font-size:40px;letter-spacing:-1.8px;margin-bottom:14px}.description{margin-bottom:22px}.switcher{margin-bottom:20px}.switcher a{padding:9px 24px}.fallback{margin-top:20px}footer{align-items:flex-start;flex-direction:column;gap:6px}.guide[open]{padding:18px}.guide ol{padding-left:18px}}
+</style><noscript><style>.card[hidden]{display:grid}.card{margin-bottom:24px}</style></noscript></head>
+<body><header><a class="brand" href="./">Cheese & Cream</a><a class="muted-link" href="https://github.com/SeanBaek111/codex-cat-pets">View on GitHub ↗</a></header>
+<main><!-- TEST_NOTICE -->
+<nav class="switcher" aria-label="Choose your cat"><a href="#cheese" aria-current="true">Cheese</a><a href="#cream">Cream</a></nav>
+<article class="card" id="cheese" aria-labelledby="title-cheese">
+<div class="portrait"><img src="assets/cheese.gif" alt="Cheese waving" width="240" height="260"></div>
+<div class="copy"><p class="eyebrow">Pet 001 · Sprite v2</p><h1 id="title-cheese">Meet Cheese.</h1>
+<p class="description">A ginger coat, a cream muzzle, and a quietly serious little face.</p>
+<a class="button" id="install-cheese" href="codex://pets/install?name=Cheese&amp;imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2FSeanBaek111%2Fcodex-cat-pets%2Fmain%2Fpets%2Fcheese%2Fspritesheet.webp&amp;spriteVersionNumber=2">Open Cheese in Codex ↗</a>
+<p class="note">Allow your browser to open Codex. If the install window doesn't appear, use the downloads below.</p>
+<details class="fallback"><summary>Installer did not open?</summary><p>Save both files into a folder named <code>cheese</code>, then follow the <a href="#manual-install">manual installation guide</a>.</p>
+<div class="package-links"><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/pet.json">Download pet.json</a><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cheese/spritesheet.webp">Download spritesheet.webp</a></div></details></div></article>
+<article class="card" id="cream" aria-labelledby="title-cream" hidden>
+<div class="portrait"><img src="assets/cream.gif" alt="Cream waving" width="240" height="260"></div>
+<div class="copy"><p class="eyebrow">Pet 002 · Sprite v2</p><h1 id="title-cream">Meet Cream.</h1>
+<p class="description">Soft white fur, round eyes, and a tiny pink nose.</p>
+<a class="button" id="install-cream" href="codex://pets/install?name=Cream&amp;imageUrl=https%3A%2F%2Fraw.githubusercontent.com%2FSeanBaek111%2Fcodex-cat-pets%2Fmain%2Fpets%2Fcream%2Fspritesheet.webp&amp;spriteVersionNumber=2">Open Cream in Codex ↗</a>
+<p class="note">Allow your browser to open Codex. If the install window doesn't appear, use the downloads below.</p>
+<details class="fallback"><summary>Installer did not open?</summary><p>Save both files into a folder named <code>cream</code>, then follow the <a href="#manual-install">manual installation guide</a>.</p>
+<div class="package-links"><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/pet.json">Download pet.json</a><a href="https://raw.githubusercontent.com/SeanBaek111/codex-cat-pets/main/pets/cream/spritesheet.webp">Download spritesheet.webp</a></div></details></div></article>
+<details class="guide" id="manual-install"><summary>Manual installation · Mac & Windows</summary>
+<!-- DOWNLOAD_LINK --><p><a href="https://github.com/SeanBaek111/codex-cat-pets/releases/latest/download/codex-cat-pets.zip">Download both pets as a ZIP ↗</a>, or right-click the individual file links and choose <strong>Save Link As</strong>.</p><!-- /DOWNLOAD_LINK -->
+<h2>macOS</h2><ol><li>Extract the ZIP and open its <code>pets</code> folder.</li><li>In Finder, press <strong>⌘⇧G</strong> and enter <code>~/.codex/</code>.</li><li>Copy <code>cheese</code> and <code>cream</code> into the <code>pets</code> folder. Create it if missing. Back up matching folders before replacing them.</li><li>Restart Codex and choose your companion in <strong>Settings → Pets</strong>.</li></ol>
+<h2>Windows</h2><p>Copy the same folders into <code>%USERPROFILE%\.codex\pets\</code> in File Explorer, creating the destination if needed. Back up matching folders before replacing them. Restart Codex and choose your pet in Settings.</p>
+<p>Keep <code>pet.json</code> and <code>spritesheet.webp</code> together inside each pet folder. Custom <code>CODEX_HOME</code>? Use its <code>pets</code> directory. A desktop app with custom pet support is required.</p>
+</details></main>
+<footer><span>Two cats. A little company.</span><span>Independent community pets · Not affiliated with OpenAI</span></footer>
+<script>
+const cats = ['cheese', 'cream'];
+function selectCat() {
+  const target = location.hash.slice(1);
+  if (target === 'manual-install') {
+    document.getElementById('manual-install').open = true;
+    return;
+  }
+  const selected = cats.includes(target) ? target : 'cheese';
+  for (const cat of cats) {
+    document.getElementById(cat).hidden = cat !== selected;
+    const link = document.querySelector('.switcher a[href="#' + cat + '"]');
+    if (cat === selected) link.setAttribute('aria-current', 'true');
+    else link.removeAttribute('aria-current');
+  }
+}
+window.addEventListener('hashchange', selectCat);
+selectCat();
+</script></body></html>
